@@ -1,7 +1,7 @@
 // import ConfigService from "./config-service";
 // import FAKER_SERVICE from "./services/faker-service";
 const express = require('express');
-const ConfigService = require('./config-service');
+const ConfigService = require('./services/config-service');
 const FAKER_SERVICE = require('./services/faker-service');
 
 const app = express();
