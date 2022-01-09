@@ -1,4 +1,4 @@
-const faker = require('faker');
+import faker from 'faker';
 
 const FAKER_SERVICE = {
 
@@ -116,13 +116,7 @@ const FAKER_SERVICE = {
         },
     },
 
-    fakerKeyToValueMapper: (key: string) => {
-        const maps = {};
-        Object.keys(FAKER_SERVICE.dataGenerationFunctions).forEach(key => maps[key] = FAKER_SERVICE.dataGenerationFunctions[key]());
-        return key ? maps[key] : maps;
-    },
-
-    fakerKeyToTextMapper: (key: string) => {
+    fakerKeyToTextMapper: (key) => {
         const maps = {
             streetName: "Street Name",
             streetAdress: "Street Address",
@@ -198,7 +192,8 @@ const FAKER_SERVICE = {
             mac: "Mac Address",
             password: "Password",
         };
-        return maps[key];
+        // return maps[key];
     },
 };
-module.exports = FAKER_SERVICE;
+
+export default FAKER_SERVICE;
