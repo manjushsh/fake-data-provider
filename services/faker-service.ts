@@ -1,9 +1,11 @@
 import faker from 'faker';
+type Locale = string;
 
 const FAKER_SERVICE = {
 
     dataGenerationFunctions: {
-        address: () => {
+        address: (locale: Locale) => {
+            faker.locale = locale;
             return {
                 streetName: faker.address.streetName(),
                 streetAdress: faker.address.streetAddress(),
@@ -20,7 +22,8 @@ const FAKER_SERVICE = {
                 longitude: faker.address.longitude(),
             };
         },
-        name: () => {
+        name: (locale: Locale) => {
+            faker.locale = locale;
             const min = 0, max = 1;
             const gender0Or1 = Math.floor(Math.random() * (max - min + 1)) + min;
             return {
@@ -36,7 +39,8 @@ const FAKER_SERVICE = {
             };
         },
 
-        phone: () => {
+        phone: (locale: Locale) => {
+            faker.locale = locale;
             return {
                 phoneNumber: faker.phone.phoneNumber(),
                 phoneNumberFormat: faker.phone.phoneNumberFormat(),
@@ -44,7 +48,8 @@ const FAKER_SERVICE = {
             };
         },
 
-        finance: () => {
+        finance: (locale: Locale) => {
+            faker.locale = locale;
             return {
                 account: faker.finance.account(),
                 accountName: faker.finance.accountName(),
@@ -66,7 +71,8 @@ const FAKER_SERVICE = {
             };
         },
 
-        image: () => {
+        image: (locale: Locale) => {
+            faker.locale = locale;
             return {
                 image: faker.image.image(),
                 avatar: faker.image.avatar(),
@@ -87,7 +93,8 @@ const FAKER_SERVICE = {
                 dataUri: faker.image.dataUri(),
             };
         },
-        internet: () => {
+        internet: (locale: Locale) => {
+            faker.locale = locale;
             const min = 0, max = 1;
             const gender0Or1 = Math.floor(Math.random() * (max - min + 1)) + min;
             const passwordLength = Math.floor(Math.random() * (18 - 9 + 1)) + 9;
