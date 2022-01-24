@@ -55,6 +55,6 @@ app.get('/data/:type/:locale', (req, res) => {
     }
 });
 
-// app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
 
 module.exports = app;
