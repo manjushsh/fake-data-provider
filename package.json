@@ -26,6 +26,7 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/faker": "^5.5.9",
+    "@types/node": "^17.0.10",
     "nodemon": "^2.0.15",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
