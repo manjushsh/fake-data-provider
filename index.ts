@@ -1,4 +1,5 @@
 import express from 'express';
+import router from 'express';
 import CONFIG_SERVICE from './services/config-service';
 import DataGenerationService from './services/data-generation-servive';
 import FAKER_SERVICE from './services/faker-service';
