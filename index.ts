@@ -2,16 +2,16 @@ import express from "express";
 import CONFIG_SERVICE from "./services/config-service";
 import DataGenerationService from "./services/data-generation-servive";
 import FAKER_SERVICE from "./services/faker-service";
-import Locale from "./locale-options.json";
 import fakeType from "./api/fake-type";
 import languageAndType from "./api/fake-lang-type";
 
 const app = express();
+// app.use(express.json({ extended: false }));
 const { PORT } = CONFIG_SERVICE;
-
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
 
 app.get("/", (req, res) => {
+  console.warn("Req ", req);
   const data = DataGenerationService.fakerKeyToValueMapper();
   res.send({ data });
 });
