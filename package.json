@@ -4,6 +4,7 @@
   "description": "API to provide fake data for dummy data generation",
   "main": "server.ts",
   "scripts": {
+    "start": "node server.ts",
     "watch": "nodemon server.ts"
   },
   "keywords": [
