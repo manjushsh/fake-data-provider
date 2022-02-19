@@ -1,9 +1,9 @@
 import express from "express";
 import DataGenerationService from "../services/data-generation-servive";
 import FAKER_SERVICE from "../services/faker-service";
+import Locale from "../locale-options.json";
 const router = express.Router();
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
-import Locale from "../locale-options.json";
 
 router.get("/data/:type/:locale", (req, res) => {
   const type = req?.params?.type;
