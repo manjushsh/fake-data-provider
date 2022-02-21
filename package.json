@@ -4,9 +4,8 @@
   "description": "API to provide fake data for dummy data generation",
   "main": "index.ts",
   "scripts": {
-    "start": "vercel dev",
-    "watch": "nodemon index.ts",
-    "deploy" : "vercel deploy --prod"
+    "start": "node index.ts",
+    "watch": "nodemon index.ts"
   },
   "keywords": [
     "faker",
