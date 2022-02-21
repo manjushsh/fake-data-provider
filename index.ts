@@ -26,4 +26,4 @@ app.get("/data/:type/:locale", languageAndType);
 
 app.listen(PORT, () => console.log(`App listening at PORT ${PORT}`));
 
-module.exports = app;
+export default app;
