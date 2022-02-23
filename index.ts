@@ -4,6 +4,7 @@ import DataGenerationService from "./services/data-generation-servive";
 import FAKER_SERVICE from "./services/faker-service";
 import fakeType from "./api/fake-type";
 import languageAndType from "./api/fake-lang-type";
+import ImageGeneration from './api/generate-image';
 import Locale from "./locale-options.json";
 
 const app = express();
@@ -27,6 +28,9 @@ app.get("/api/:type", fakeType);
 
 // Language and Type
 app.get("/api/:type/:locale", languageAndType);
+
+// Image Generation
+app.post("/api/image", ImageGeneration);
 
 app.listen(PORT, () => console.log(`App listening at PORT ${PORT}`));
 
