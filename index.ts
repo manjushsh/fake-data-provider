@@ -16,7 +16,6 @@ const availableOptions = {
 };
 
 app.get("/", (req, res) => {
-  console.warn("Req ", req);
   const data = DataGenerationService.fakerKeyToValueMapper();
   res.send({ data });
 });
