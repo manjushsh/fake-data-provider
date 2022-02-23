@@ -22,7 +22,7 @@ Takes Faker key and returns data as per key. If not passed, all data will be ret
 | `type`    | `string` | **Optional**. type to fetch       |
 
 
-#### Get data by type
+#### Get data by type and language
 
 ```https
   GET /api/:type/:locale
@@ -33,8 +33,6 @@ Takes Faker key and language to return data as per key and locale. If type not p
 | :-------- | :------- | :-------------------------------- |
 | `type`    | `string` | **Optional**. type to fetch       |
 | `locale`  | `string` | **Optional**. language to fetch   |   
-
-#### Get data by type and language.
 
 # How to run :
 - Clone the repository
