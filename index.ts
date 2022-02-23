@@ -11,7 +11,6 @@ const { PORT } = CONFIG_SERVICE;
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
 
 app.get("/", (req, res) => {
-  console.warn("Req ", req);
   const data = DataGenerationService.fakerKeyToValueMapper();
   res.send({ data });
 });
