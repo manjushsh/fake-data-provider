@@ -19,15 +19,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "faker": "^5.5.3"
+    "faker": "^5.5.3",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.4"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/faker": "^5.5.9",
     "@types/node": "^17.0.10",
     "nodemon": "^2.0.15",
-    "ts-node": "^10.5.0",
-    "typescript": "^4.5.4",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
   }
