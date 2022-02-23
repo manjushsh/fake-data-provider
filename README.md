@@ -32,11 +32,9 @@ Takes Faker key and language to return data as per key and locale. If type not p
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `type`    | `string` | **Optional**. type to fetch       |
-| `locale`  | `string` | **Optional**. language to fetch   |   |
+| `locale`  | `string` | **Optional**. language to fetch   |   
 
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
+#### Takes two numbers and returns the sum.
 
 # How to run :
 - Clone the repository
