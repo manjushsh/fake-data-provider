@@ -8,7 +8,9 @@ import ImageGeneration from './api/generate-image';
 import Locale from "./locale-options.json";
 
 const app = express();
-// app.use(express.json({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 const { PORT } = CONFIG_SERVICE;
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
 const availableOptions = {
@@ -30,7 +32,7 @@ app.get("/api/:type", fakeType);
 app.get("/api/:type/:locale", languageAndType);
 
 // Image Generation
-app.post("/api/image/placeholder", ImageGeneration);
+app.post("/api/placeholder", ImageGeneration);
 
 app.listen(PORT, () => console.log(`App listening at PORT ${PORT}`));
 
