@@ -32,7 +32,24 @@ Takes Faker key and language to return data as per key and locale. If type not p
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `type`    | `string` | **Optional**. type to fetch       |
-| `locale`  | `string` | **Optional**. language to fetch   |   
+| `locale`  | `string` | **Optional**. language to fetch   | 
+
+
+#### Get Placeholder Image
+
+```https
+  POST /api/placeholder
+```
+With given body parameters, returns base64 image. Pass JSON parameters in request body.
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `text`    | `string` | **Optional**. Text to display     |
+| `width`   | `number` | **Optional**. Image width         | 
+| `height`  | `number` | **Optional**. Image height        | 
+| `fontSize`| `string` | **Optional**. Image text size     |
+| `backgroundColor`  | `string` | **Optional**. Image background color        | 
+| `textColor`  | `string` | **Optional**. Image text color        | 
 
 # How to run :
 - Clone the repository
