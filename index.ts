@@ -30,7 +30,7 @@ app.get("/api/:type", fakeType);
 app.get("/api/:type/:locale", languageAndType);
 
 // Image Generation
-app.post("/api/image", ImageGeneration);
+app.post("/api/placeholder", ImageGeneration);
 
 app.listen(PORT, () => console.log(`App listening at PORT ${PORT}`));
 
