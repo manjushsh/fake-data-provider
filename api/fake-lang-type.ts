@@ -5,7 +5,7 @@ import Locale from "../locale-options.json";
 const router = express.Router();
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
 
-router.get("/data/:type/:locale", (req, res) => {
+router.get("/api/:type/:locale", (req, res) => {
   const type = req?.params?.type;
   const locale = req?.params?.locale;
   if (DATA_KEYS.includes(type) && Locale.locale.includes(locale)) {

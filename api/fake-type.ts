@@ -5,7 +5,7 @@ import Locale from "../locale-options.json";
 const router = express.Router();
 const DATA_KEYS = Object.keys(FAKER_SERVICE.dataGenerationFunctions);
 
-router.get("/data/:type", (req, res) => {
+router.get("/api/:type", (req, res) => {
     const parameter = req?.params?.type;
     if (DATA_KEYS.includes(parameter)) {
       const data = DataGenerationService.fakerKeyToValueMapper("en", parameter);
