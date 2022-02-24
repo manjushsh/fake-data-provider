@@ -45,14 +45,14 @@ Takes Faker key and language to return data as per key and locale. If type not p
 
 With given body parameters, returns base64 image. Pass JSON parameters in request body.
 
-| Parameter         | Type     | Description                          |
-| :---------------- | :------- | :----------------------------------- |
-| `text`            | `string` | *Optional*. Text to display        |
-| `width`           | `number` | *Optional*. Image width            |
-| `height`          | `number` | *Optional*. Image height           |
-| `fontSize`        | `string` | *Optional*. Image text size in px  |
-| `backgroundColor` | `string` | *Optional*. Image background color |
-| `textColor`       | `string` | *Optional*. Image text color       |
+| Parameter         | Type     | Description                        |
+| :---------------- | :------- | :--------------------------------- |
+| `text`            | `string` | _Optional_. Text to display        |
+| `width`           | `number` | _Optional_. Image width            |
+| `height`          | `number` | _Optional_. Image height           |
+| `fontSize`        | `string` | _Optional_. Image text size in px  |
+| `backgroundColor` | `string` | _Optional_. Image background color |
+| `textColor`       | `string` | _Optional_. Image text color       |
 
 Example parameter body:
 
