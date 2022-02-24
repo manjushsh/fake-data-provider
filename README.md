@@ -54,7 +54,7 @@ With given body parameters, returns base64 image. Pass JSON parameters in reques
 | `backgroundColor` | `string` | _Optional_. Image background color |
 | `textColor`       | `string` | _Optional_. Image text color       |
 
-Example parameter body:
+Example body of request:
 
 ```json
 {
@@ -66,6 +66,20 @@ Example parameter body:
   "textColor": "#FEFEFF"
 }
 ```
+CURL:
+``````bash
+curl --location --request POST 'https://mock-data-provider.herokuapp.com/api/placeholder' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "text": "Placeholder",
+    "width": 1920,
+    "height": 1080,
+    "fontSize": "24px",
+    "backgroundColor": "#ACACAC",
+    "textColor": "#FEFEFF"
+}'
+```
+
 
 # How to run locally:
 
