@@ -67,7 +67,7 @@ Example body of request:
 }
 ```
 CURL:
-``````bash
+```bash
 curl --location --request POST 'https://mock-data-provider.herokuapp.com/api/placeholder' \
 --header 'Content-Type: application/json' \
 --data-raw '{
