@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/manjushsh/mock-data-provider-express/actions/workflows/main.yml/badge.svg)](https://github.com/manjushsh/mock-data-provider-express/actions/workflows/main.yml)
+
 # Mock Data Generator
 
 Easy dummy data generation using Faker.js [https://www.npmjs.com/package/faker/v/5.5.3]
@@ -52,8 +54,8 @@ Takes Faker key and language to return data as per key and locale. If type not p
 
 | Parameter | Type     | Description                     |
 | :-------- | :------- | :------------------------------ |
-| `type`    | `string` | **Optional**. type to fetch     |
-| `locale`  | `string` | **Optional**. language to fetch |
+| `type`    | `string` | *Optional*. type to fetch     |
+| `locale`  | `string` | *Optional*. language to fetch |
 
 #### Get Placeholder Image
 
